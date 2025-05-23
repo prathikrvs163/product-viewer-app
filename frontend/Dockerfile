@@ -1,17 +1,15 @@
-# Use the official Nginx image as base
 FROM nginx:alpine
 
-# Remove default Nginx static assets
+# Remove default NGINX static files
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy our static files to Nginx html directory
+# Copy HTML to NGINX root
 COPY index.html /usr/share/nginx/html/
 
-# Copy custom Nginx configuration (optional - for CORS and other settings)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy NGINX config (template uses $PORT)
+COPY default.conf.template /etc/nginx/templates/default.conf.template
 
-# Expose port 80
-EXPOSE 80
+EXPOSE 8080
 
-# Start Nginx server
-CMD ["nginx", "-g", "daemon off;"]
+# Use envsubst to dynamically inject $PORT at runtime
+CMD ["sh", "-c", "envsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]
