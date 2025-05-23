@@ -1,8 +1,10 @@
-
 INSERT INTO products (name, description, price, image_url) VALUES
-('Smartphone X1', 'A high-end smartphone with advanced features.', 699.99, 'https://via.placeholder.com/300x200?text=Smartphone+X1'),
-('Wireless Earbuds', 'Comfortable and long-lasting wireless earbuds.', 89.50, 'https://via.placeholder.com/300x200?text=Wireless+Earbuds'),
-('Laptop Pro 15"', 'A powerful laptop for professionals and creatives.', 1249.00, 'https://via.placeholder.com/300x200?text=Laptop+Pro+15'),
-('Smartwatch S2', 'Track your fitness and stay connected on the go.', 199.99, 'https://via.placeholder.com/300x200?text=Smartwatch+S2'),
-('Bluetooth Speaker', 'Portable speaker with high-quality sound.', 49.95, 'https://via.placeholder.com/300x200?text=Bluetooth+Speaker');
-
+('Running Shoes', 'Comfortable shoes for daily workouts and runs.', 79.99, 'https://placehold.co/300x200?text=Shoes'),
+('LED TV 50"', 'Ultra HD smart TV with vibrant display.', 449.99, 'https://placehold.co/300x200?text=TV'),
+('Laptop Pro', 'Sleek laptop for professionals and students.', 999.00, 'https://placehold.co/300x200?text=Laptop'),
+('Smartwatch X', 'Track your fitness and receive notifications.', 199.00, 'https://placehold.co/300x200?text=Watch'),
+('Smartphone Z', 'Powerful smartphone with stunning display.', 699.99, 'https://placehold.co/300x200?text=Smartphone'),
+('Mystery Novel', 'A thrilling mystery novel with twists.', 14.99, 'https://placehold.co/300x200?text=Book'),
+('Football', 'Durable football for outdoor sports.', 24.99, 'https://placehold.co/300x200?text=Football'),
+('Denim Jeans', 'Stylish and comfortable jeans for all occasions.', 49.99, 'https://placehold.co/300x200?text=Jeans'),
+('Window AC 1.5T', 'High-efficiency air conditioner for cool summers.', 379.00, 'https://placehold.co/300x200?text=AC');
