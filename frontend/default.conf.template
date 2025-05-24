@@ -1,6 +1,8 @@
 server {
-    listen ${PORT};
-    server_name localhost;
+    listen ${PORT} default_server;
+    server_name _;
+
+    port_in_redirect off;
 
     root /usr/share/nginx/html;
     index index.html;
